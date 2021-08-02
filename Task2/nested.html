@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested table</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nested table</h1>
+    <table>
+        <th colspan="4">My Favourites</th>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <th>Sports</th>
+                        <th>Player</th>
+                    </tr>
+                    <tr>
+                        <td>Cricket</td>
+                        <td>Virat Kohli</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Entertainment</th>
+                        <th>Actor</th>
+                    </tr>
+                    <tr>
+                        <td>Movies</td>
+                        <td>Vijay Sethupathi</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
