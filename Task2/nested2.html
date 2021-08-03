@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested tables</title>
+    <style>
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        #tab {
+            border: 5px outset gray;
+        }
+        #t01{
+            border: 2px inset gray;
+            margin: 5px;
+            padding: 10px;
+            border-spacing: 0px;
+        }
+        #t02 {
+            border: 2px inset gray;
+            padding: 10px;
+            margin: 5px 5px 5px 0px;
+            border-spacing: 0px;
+        }
+        #t01 td{
+            border: 2px inset gray;
+            padding: 10px;
+        }
+        #t02 td{
+            border: 2px inset gray;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Nested table</h1>
+    <br><br>
+    <table id="tab">
+        <tr>
+            <td id="row">
+                <table id="t01">
+                    <tr>
+                        <td>Rubber</td>
+                        <td>baby</td>
+                    </tr>
+                    <tr>
+                        <td>buggy</td>
+                        <td>bumpers</td>
+                    </tr>
+                </table>
+            </td>
+            <td id="row2">
+                <table id="t02">
+                    <tr>
+                        <td>She</td>
+                        <td>sells</td>
+                    </tr>
+                    <tr>
+                        <td>sea</td>
+                        <td>shells</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
