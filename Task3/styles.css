@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #FB7AFC;
+    height: 70px;
+    overflow: hidden;
+}
+nav{
+    float: left;
+    margin-top: 25px;
+}
+nav.first a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    margin: 90px;
+}
+input{
+    margin-top: 20px;
+}
+input[type=button]{
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 30px;
+}
+input[type=text]{
+    width: 200px;
+    height: 30px;
+}
+.column{
+    float: left;
+    padding: 0px;
+}
+.column.one{
+    width: 80%;
+    height: 500px;
+    margin-bottom: 50px;
+    border-right: 10px solid gray;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    overflow: scroll;
+}
+.column.two{
+    width: 20%;
+    background-color: #FB7AFC;
+    height: 500px;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+.column.two a:link{
+    color: blue;
+}
+.column.two a:visited{
+    color: red;
+}
+.column.two a:hover{
+    color: purple;
+}
+ul{
+    list-style-position: inside;
+    margin: 20px;
+    line-height: 40px;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2, h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

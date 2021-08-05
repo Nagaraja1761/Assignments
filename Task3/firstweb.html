@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .column{
+            float: left;
+            padding: 10px;
+        }
+        img{
+            width: 20%;
+            float: left;
+            margin: 10px 40px 10px 10px;
+        }
+        .column.nav{
+            width: 60%;
+            float: left;
+            margin-top: 50px;
+        }
+        .column.nav a{
+            display: inline-block;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 20px;
+        }
+        .column.nav a:link{
+            background-color: blue;
+        }
+        .column.nav a:visited{
+            background-color: red;
+        }
+        .column.nav a:hover{
+            background-color: purple;
+        }
+        .column.form{
+            width: 16%;
+            float: left;
+            margin-top: 60px;
+            margin-right: 0px;
+            /* position: relative;
+            bottom: 80px; */
+        }
+        hr{
+            border-style: dashed;
+        }
+        div.row{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .column.left{
+            width: 20%;
+            margin-right: 30px;
+        }
+        .column.left a{
+            display: block;
+            background-color: white;
+            color: black;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+            margin: 20px;
+        }
+        .column.left a:link{
+            background-color: blue;
+        }
+        .column.left a:visited{
+            background-color: red;
+        }
+        .column.left a:hover{
+            background-color: purple;
+        }
+        div.column.left{
+            background-color: #DDDDDD;
+            margin-left: 10px;
+            overflow: scroll;
+        }
+        .column.middle{
+            width:60%
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .column.right a{
+            display: block;
+            text-align: center;
+            background-color: white;
+            color: black;
+        }
+        .column.right a:link{
+            color: blue;
+        }
+        .column.right a:visited{
+            color: red;
+        }
+        .column.right a:hover{
+            color: purple;
+        }
+        .column.right{
+            background-color: #DDDDDD;
+            width: 15%;
+            height: 300px;
+            margin-left: 20px;
+            overflow: scroll;
+        }
+        .column.right ul{
+            list-style-type: none;
+        }
+        .column.right section{
+            display: block;
+            background-color: white;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .footer{
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 500px;
+        }
+        .footer a{
+            text-decoration: none;
+            color: black;
+            margin: 20px;
+        }
+        .footer a:link{
+            color: blue;
+        }
+        .footer a:visited{
+            color: red;
+        }
+        .footer a:hover{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div>
+            <img src="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/w_596,c_limit,q_auto:best,f_auto/fc/3034007-inline-i-applelogo.jpg" alt="Apple logo">
+        </div>
+        <div class="column nav">
+            <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a>
+            <a href="https://en.wikipedia.org/wiki/History_of_Apple_Inc.">History of Apple</a>
+            <a href="#">Primary Nav</a>
+            <a href="#">Primary Nav</a>
+            <a href="#">Primary Nav</a>
+        </div>
+        <div class="column form">
+            <form action="">
+                <label for="search">Search</label><br>
+                <input type="text" id="search">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="column left">
+            <a href="https://www.google.com/"><b>Google</b></a>
+            <a href="https://in.yahoo.com/?p=us&guccounter=1"><b>Yahoo!</b></a>
+            <a href="#"><b>Secondary Nav</b></a>
+            <a href="#"><b>Secondary Nav</b></a>
+            
+        </div>
+        <div class="column middle">
+            <h1>Main article Heading</h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, blanditiis voluptatum quia sint voluptatem quis magni eius esse odio alias nostrum fugit rerum iusto quod commodi vitae earum explicabo at. Hic, ducimus pariatur facere voluptatem dolore sit molestias commodi distinctio nisi maxime exercitationem similique est aspernatur magnam veniam, et reprehenderit totam. Illum aliquid consectetur iusto sunt, harum, magni pariatur corporis perspiciatis at dicta doloremque, alias ex cumque ab modi aut sequi et recusandae vel. Recusandae architecto laboriosam ex modi quasi iste ipsum. Necessitatibus, excepturi? Reiciendis a vero nam amet repellendus saepe consectetur est aperiam? Delectus laborum error eligendi dolorem dolores.</p><br>
+            <h3>Sub Heading</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veniam culpa dignissimos, labore sunt vitae vero eum ex enim rerum ad quibusdam, quos, praesentium quidem ipsam facere ut cumque ullam recusandae soluta? Perferendis, explicabo aperiam!</p>
+        </div>
+        <div class="column right">
+            <h3>Share</h3><br>
+            <ul>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://twitter.com/">Twitter</a></li>
+                <li><a href="#">Email</a></li>
+            </ul><br>
+            <h3>Recommended</h3><br>
+            <section>
+                <a href="#"><b>Related article</b></a>
+                <p>Article Description</p>
+            </section>
+            <section>
+                <a href="#"><b>Related article</b></a>
+                <p>Article Description</p>
+            </section>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+</body>
+</html>
