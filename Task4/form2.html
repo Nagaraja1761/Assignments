@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        div{
+            background-color: white;
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid gray;
+            border-radius: 15px;
+        }
+        fieldset{
+            border: 1px solid gray;
+        }
+        form{
+            margin: 10px;
+        }
+        a{
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            margin-left: 45%;
+            padding-left: 10px;
+        }
+        h2{
+            text-align: center;
+        }
+        input[type="file"]{
+            display: none;
+        }
+        #fil{
+            background-color: red;
+            color: white;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+        <form action="">
+            <h2>Application For Permission To Date My Daughter</h2>
+            <p>Note : Form is to be completed at least 21 days prior to date</p>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Enter name here"><br><br>
+                <label for="address">Address: </label>
+                <input type="text" id="address" placeholder="Enter address here"><br><br>
+                <label for="mail">Email: </label>
+                <input type="email" id="mail" placeholder="Enter email here"><br><br>
+                <label for="phno">Phone Number: </label>
+                <input type="number" id="phno" placeholder="Enter 10 digit number"><br><br>
+                <label for="iq">IQ: </label>
+                <input type="number" id="iq" placeholder="Enter IQ here"><br>
+                <p>Gender: </p>
+                <input type="radio" id="male" name="gender" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender"> 
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender">
+                <label for="other">Other</label><br><br>
+                <label for="date">Date of proposed Outing: </label>
+                <input type="date" id="date" >
+            </fieldset><br>
+            <fieldset>
+                <label for="heading">Check All that Apply</label><br><br>
+                <input type="checkbox" id="apply1" name="apply1">
+                <label for="apply1">I have tattoos and/or piercings</label><br>
+                <input type="checkbox" id="apply2" name="apply2">
+                <label for="apply2">I am more than 2 years older than my daughter</label><br>
+                <input type="checkbox" id="apply3" name="apply3">
+                <label for="apply2">I own a panel van or V8 ute</label><br>
+                <input type="checkbox" id="apply4" name="apply4" checked>
+                <label for="apply2">I work Full-time</label><br>
+                <input type="checkbox" id="apply5" name="apply5" checked>
+                <label for="apply2">My parents are rich</label><br>
+                <input type="checkbox" id="apply6" name="apply6" checked>
+                <label for="apply2">Is the date at a well lit public location</label><br>             
+            </fieldset><br>
+            <fieldset>
+                <label for="political">Political Persuasion</label>
+                <select name="political" id="political">
+                    <option value="Right">Right Wing</option>
+                    <option value="Left" selected>Left Wing</option>
+                    <option value="It">IT Wing</option>
+                    <option value="none">None</option>
+                </select>
+                <label for="education">Education level Completed: </label>
+                <select name="edu" id="education">
+                    <option value="Phd">Phd</option>
+                    <option value="Uni" selected>University</option>
+                    <option value="Master">Master Degree</option>
+                    <option value="bach">Bachelor Degree</option>
+                </select>
+            </fieldset><br>
+        <fieldset>
+            <legend>Essay section</legend>
+            <p>In 50 words or more explain why you want to date my daughter</p>
+            <textarea name="essay" id="" cols="30" rows="3" placeholder="Enter Text Here"></textarea><br><br>
+            <label for="essay2">Please upload contact details for 2 refernces</label><br>
+            <textarea name="essay2" id="essay2" cols="30" rows="3" placeholder="Enter text Here"></textarea><br><br>
+            <label for="file">Upload Police Clearance Certificate, Bank Statement and Medical Certificates here: </label>
+            <input type="file" id="file" value="Attach files" multiple>
+            <label id="fil" for="file">Attach files</label>
+        </fieldset>
+    </form>
+    <footer>
+        <a href="#">Send Your Application</a><br><br>
+    </footer>
+    </div>
+</body>
+</html>
