@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of integers</title>
+</head>
+<body>
+    <p>Sum of two integers</p>
+    <p>If the integers are equal it triple their sum</p>
+    <label for="x">X value</label>
+    <input type="text" id="x"><br>
+    <label for="y">Y value</label>
+    <input type="text" id="y"><br>
+    <button type="button" onclick="sumof()">Check ans</button><br>
+    <p id="ans"></p>
+
+    <script>
+        function sumof(){
+            var x1, y1, sum;
+            x1 = parseInt(document.getElementById("x").value);
+            y1 = parseInt(document.getElementById("y").value);
+            if (x1 == y1){
+                sum = 3 * (x1 + y1);
+                document.getElementById("ans").innerHTML = ("The integers are equal and their triple sum is " + sum);
+            }
+            else{
+                sum = (x1 + y1);
+                document.getElementById("ans").innerHTML = ("The integers are not equal and the sum is " + sum);
+            }
+        }
+    </script>
+</body>
+</html>

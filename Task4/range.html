@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To find range</title>
+</head>
+<body>
+    <h3>To know if either of the given integers are in the range 50 to 99</h3>
+    <label for="x">X value</label>
+    <input type="text" id="x"><br>
+    <label for="y">Y value</label>
+    <input type="text" id="y"><br>
+    <button type="button" onclick="range()">Click to know</button><br>
+    <p id="ans"></p>
+
+
+    <script>
+        function range(){
+            x = parseInt(document.getElementById("x").value);
+            y = parseInt(document.getElementById("y").value);
+            if (((x > 50) && (x < 99)) || ((y > 50) && (y < 99))){
+                document.getElementById("ans").innerHTML = true;
+            }
+            else{
+                document.getElementById("ans").innerHTML = false;
+            }
+        }
+    </script>
+</body>
+</html>

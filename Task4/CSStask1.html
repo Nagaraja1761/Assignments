@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url("https://i.pinimg.com/originals/c6/a4/06/c6a406eed0c238282fb9b0852baee4eb.jpg");
+            background-position: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            margin-top: 7px;
+            text-align: center;
+        }
+        nav{
+            width: 90vw;
+            height: 4vh;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5vh;
+            position: relative;
+        }
+        div.one{
+            position: absolute;
+            left: 0;
+            right: 80.5%;
+            height: 4vh;
+            background-color: orange;
+        }
+        div.two{
+            position: absolute;
+            left: 20%;
+            right: 60.5%;
+            height: 4vh;
+            background-color: orange;
+        }
+        div.three{
+            position: absolute;
+            left: 40%;
+            right: 40.5%;
+            height: 4vh;
+            background-color: orange;
+        }
+        div.four{
+            position: absolute;
+            left: 60%;
+            right: 20.5%;
+            height: 4vh;
+            background-color: orange;
+        }
+        div.five{
+            position: absolute;
+            left: 80%;
+            right: 0;
+            height: 4vh;
+            background-color: orange;
+        }
+        main{
+            width: 90vw;
+            height: 40vh;
+            margin-top: 2vh;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        div.imag{
+            position: absolute;
+            left: 0;
+            right: 30%;
+            height: 40vh;
+        }
+        section.letters{
+            position: absolute;
+            top: 40%;
+            left: 5%;
+        }
+        #letter1{
+            display: inline-block;
+            font-size: 25px;
+            background-color: orange;
+            font-weight: bold;
+            margin-bottom: 1%;
+        }
+        #letter2{
+            display: inline-block;
+            background-color: orange;
+            font-weight: bold;
+        }
+        div.price1{
+            position: absolute;
+            left: 71%;
+            right: 0;
+            height: 19vh;
+            background-color: orange;
+        }
+        div.price2{
+            position: absolute;
+            left: 71%;
+            right: 0;
+            top: 21vh;
+            height: 19vh;
+            background-color: orange;
+        }
+        .prices{
+            font-size: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .names{
+            font-size: 10px;
+            text-align: center;
+        }
+        section{
+            width: 90vw;
+            height: 20vh;
+            margin-top: 2vh;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        div.tacos{
+            position: absolute;
+            left: 0;
+            right: 75.75%;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+        }
+        div.beer{
+            position: absolute;
+            left: 25.25%;
+            right: 50.55%;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+        }
+        div.wine{
+            position: absolute;
+            left: 50.5%;
+            right: 25.25%;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+        }
+        div.music{
+            position: absolute;
+            left: 75.75%;
+            right: 0;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+        }
+        .pics{
+            width: 15%;
+            height: 30%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer{
+            width: 90vw;
+            height: 23vh;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2vh;
+            position: relative;
+            background-color: white;
+        }
+        figure{
+            position: absolute;
+            left: 0;
+            right: 80%;
+            height: 23vh;
+        }
+        div.foot{
+            position: absolute;
+            left: 23%;
+            right: 20%;
+            top: 30px;
+        }
+        a.last{
+            background-color: orange;
+            width: 8vw;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="one"><a href="#"><b>TACOS</b></a></div>
+        <div class="two"><a href="#"><b>BEERS</b></a></div>
+        <div class="three"><a href="#"><b>WINES</b></a></div>
+        <div class="four"><a href="#"><b>DESSERTS</b></a></div>
+        <div class="five"><a href="#"><b>RESERVATIONS</b></a></div>
+    </nav>
+    <main>
+        <div class="imag">
+            <img src="https://i.ibb.co/0CqS6D9/taco.jpg" alt="Terry's Taco joint">
+           <section class="letters">
+            <p id="letter1">Terry's taco Joint</p><br>
+            <p id="letter2">Pretty Good Tacos!</p>
+           </section>
+        </div>
+        <div class="price1">
+            <p class="prices">$1.99</p>
+            <p class="names">Tacos</p>
+        </div>
+        <div class="price2">
+            <p class="prices">$3.99</p>
+            <p class="names">Kombucha</p>
+        </div>
+    </main>
+    <section>
+        <div class="tacos">
+            <img class="pics" src="https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2018/03/iStock-172857632-e1521470917523.jpg" alt="Tacos">
+            <p><b>Tacos</b></p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sequi.</p>
+        </div>
+        <div class="beer">
+            <img class="pics" src="https://m.media-amazon.com/images/I/71F85SbM5GL._SY679_.jpg" alt="Beer">
+            <p><b>Beer</b></p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, doloremque.</p>
+        </div>
+        <div class="wine">
+            <img class="pics" src="https://media.istockphoto.com/photos/glass-of-red-wine-on-white-picture-id515707206?k=6&m=515707206&s=612x612&w=0&h=HTRJQQ4OLA9wM02_IH6EydJW8dG9nW-d9q8l271I_5I=" alt="Wine">
+            <p><b>Wine</b></p><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, voluptas.</p>
+        </div>
+        <div class="music">
+            <img class="pics" src="https://www.mcicon.com/wp-content/uploads/2021/01/Music_Music_note_1-copy-5-300x300.jpg" alt=""music>
+            <p><b>Music</b></p><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, consequatur!</p>
+        </div>
+    </section>
+    <footer>
+        <figure>
+            <img src="https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2018/03/iStock-172857632-e1521470917523.jpg" alt="Big tacos">
+        </figure>
+        <div class="foot">
+            <h3>Featured Taco</h3><br>
+            <p><b>Slim Profile, easy to hold and loaded with cheese.</b></p>
+            <p><b>This is the one you have been waiting for</b></p>
+            <a class="last" href="#">Learn More ---></a>
+        </div>
+    </footer>
+</body>
+</html>
