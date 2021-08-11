@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return even char</title>
+</head>
+<body>
+    <h3>Return all the even char if the length of the str is between 2 to 100</h3>
+    <label for="string">Enter a String</label>
+    <input type="text" id="string"><br>
+    <button type="button" onclick="evenchar()">Click here</button>
+    <p id="ans"></p>
+
+
+    <script>
+        function evenchar(){
+            let str = document.getElementById("string").value;
+            let arr = str.split('');
+            let text = "";
+            if((arr.length >= 2) && (arr.length < 100)){
+                for(i=1;i<arr.length;i++){
+                    if(i % 2 == 0){
+                        text += arr[i];
+                    }
+                    else{
+                        continue;
+                    }
+                }
+                document.getElementById("ans").innerHTML = text;
+            }
+            else{
+                alert("Invalid String");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank or not</title>
+</head>
+<body>
+    <h3>To find whether the string is blank or not</h3>
+    <label for="text">Enter a string</label>
+    <input type="text" id="text"><br>
+    <button type="button" onclick="blankornot()">Click to know</button>
+
+
+    <script>
+        function blankornot(){
+            let str = document.getElementById("text").value;
+            if(str.length > 0){
+                alert("String is not blank")
+            }
+            else{
+                alert("String is blank")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Left</title>
+</head>
+<body>
+    <h3>Rotate left the elements in the array with length 3</h3>
+    <p id="given"></p>
+    <button type="button" onclick="rotateleft()">Click to rotate</button><br>
+    <p>Integers with length 3 rotate left others remain the same</p>
+    <p id="ans"></p>
+
+    <script>
+        let gvnarray = [12,234,345,43,433,32,456,756,76,8,679];
+        document.getElementById("given").innerHTML = gvnarray;
+        let str=[];
+        let ans = ""
+        function rotateleft(){
+            for(i=0;i<gvnarray.length;i++){
+                str[i] = gvnarray[i].toString();
+                if(str[i].length == 3){
+                    spt = str[i].split('');
+                    rev = spt.reverse();
+                    res = rev.join('');
+                    ans += res + "<br>"
+                    document.getElementById("ans").innerHTML = ans;
+                }
+                else{
+                    ans += str[i] + "<br>";
+                    document.getElementById("ans").innerHTML = ans;
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>

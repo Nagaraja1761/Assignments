@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Add $ and round off</title>
+</head>
+<body>
+    <h3>Add $ sign and round off decimal</h3>
+    <label for="num">Enter a float number</label>
+    <input type="text" id="num"><br>
+    <button type="button" onclick="dollar()">Click to change</button>
+    <p id="ans"></p>
+
+
+    <script>
+        function dollar(){
+            let num =parseFloat(document.getElementById("num").value);
+            document.getElementById("ans").innerHTML = "$" + num.toFixed(2);
+        }
+    </script>
+</body>
+</html>

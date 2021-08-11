@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last three letters</title>
+</head>
+<body>
+    <h3>If the length of the string is more than 3 move the last three letters to first</h3>
+    <label for="String">Enter a string</label>
+    <input type="text" id="String"><br><br>
+    <button type="button" onclick="movethree()">Click to move</button><br>
+    <p id="result"></p>
+
+
+    <script>
+        function movethree(){
+            let str = document.getElementById("String").value;
+            let resut;
+            if(str.length >= 3){
+                resut = str.slice(-3) + str.slice(0,-3);
+                document.getElementById("result").innerHTML = resut;
+            }
+            else{
+                document.getElementById("result").innerHTML = "The length of the string less than three"
+            }
+        }
+    </script>
+</body>
+</html>

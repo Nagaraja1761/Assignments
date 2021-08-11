@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary to deecimal</title>
+</head>
+<body>
+    <h3>Convert Bimary to Decimal</h3>
+    <label for="bin">Enter a Binary value</label>
+    <input type="text" id="bin"><br>
+    <button type="button" onclick="bintodec()">Click to convert</button>
+    <p id="ans"></p>
+
+
+    <script>
+        function bintodec(){
+            let binr = document.getElementById("bin").value;
+            document.getElementById("ans").innerHTML = parseInt(binr, 2);
+        }
+    </script>
+</body>
+</html>

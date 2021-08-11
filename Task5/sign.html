@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign</title>
+</head>
+<body>
+    <h3>To display the sign of the product in alert box</h3>
+    <label for="a">Enter A value</label>
+    <input type="text" id="a"><br>
+    <label for="b">Enter B value</label>
+    <input type="text" id="b"><br>
+    <label for="c">Enter C value</label>
+    <input type="text" id="c"><br>
+    <button type="button" onclick="knowsign()">Click to know sign</button>
+    <p id="ans"></p>
+
+
+    <script>
+        function knowsign(){
+            let a = parseInt(document.getElementById("a").value);
+            let b = parseInt(document.getElementById("b").value);
+            let c = parseInt(document.getElementById("c").value);
+            if(Math.sign(a*b*c) == 1){
+                return alert("The Sign is +")
+            }
+            else if(Math.sign(a*b*c) == -1){
+                return alert("The Sign is -")
+            }
+            else{
+                return alert("The value is NULL")
+            }
+        }
+    </script>
+</body>
+</html>
