@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal details</title>
+</head>
+<body>
+    <h3>Personal details</h3>
+    <form>
+        <label for="fname">First Name : </label>
+        <input type="text" id="fname"><br><br>
+        <label for="lname">Last Name : </label>
+        <input type="text" id="lname"><br><br>
+        <label for="dob">Date of Birth : </label>
+        <input type="date" id="dob"><br><br>
+        <label for="age">Age : </label>
+        <input type="text" id="age"><br><br>
+        <label for="add">Address : </label>
+        <input type="text" id="add"><br><br>
+        <label for="city">City : </label>
+        <input type="text" id="city"><br><br>
+        <button type="button" id="btn">Submit</button><br>
+        <p>Full Name : <span id="full"></span></p>
+        <p>Date of Birth : <span id="date"></span></p>
+        <p>City : <span id="cit"></span></p>
+
+
+
+        <script>
+            var x = document.getElementById("btn")
+            x.addEventListener("click",function(){ alert("Form is submitted")});
+            x.addEventListener("click",display);
+            function display(){
+                let fname = document.getElementById("fname").value;
+                let lname = document.getElementById("lname").value;
+                let dob = document.getElementById("dob").value;
+                let city = document.getElementById("city").value;
+                document.getElementById("full").innerHTML = fname + lname;
+                document.getElementById("date").innerHTML = dob;
+                document.getElementById("cit").innerHTML = city;
+            }
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight words</title>
+    <style>
+        .bgyellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta sunt, ipsam voluptates sed enim expedita perspiciatis officiis, voluptas ad iure quam doloribus aliquid sequi? Blanditiis, tempora deserunt dignissimos ut magni velit vel optio quisquam mollitia, neque amet minima, aut doloribus praesentium quas non. Perferendis a recusandae culpa? Et obcaecati commodi tempora hic enim dicta distinctio esse quod labore perferendis architecto modi vero cum eos, iusto fugiat quam necessitatibus, ab asperiores perspiciatis ullam! Esse impedit cum, optio placeat quam ad, possimus officiis saepe ut a voluptates ab fuga aperiam sed suscipit nulla harum aliquam? Maiores necessitatibus voluptatibus reprehenderit temporibus consectetur ad corporis sed molestiae laborum quasi beatae quod esse at est non nisi, ipsam iste consequatur voluptate, natus quis eum. Impedit incidunt placeat repudiandae! Laborum unde quam repudiandae, atque natus reiciendis sit ab ratione eligendi delectus in sint, molestias, quidem maiores expedita nostrum neque odit magni repellendus. Magni aspernatur enim totam, quisquam accusantium iste molestias sapiente sunt atque. Molestias exercitationem, velit explicabo consequatur quas eligendi ducimus impedit culpa dolores illum dolore voluptatibus, ex quos deleniti accusantium blanditiis dolorem cum consequuntur perferendis! Velit quaerat numquam tenetur aspernatur neque ullam similique mollitia, nam impedit vitae debitis possimus fugit animi voluptatem, quas dolorem odio ab necessitatibus perferendis aperiam? Voluptatum enim nihil nobis earum facere possimus suscipit soluta assumenda error dolorum deserunt quibusdam aperiam accusantium ad doloremque quidem, consequatur ea saepe fugit perferendis exercitationem laborum alias libero illum! Consequatur adipisci vitae dolores quas autem corporis voluptatibus, porro debitis expedita eaque perspiciatis quidem! Ipsam ducimus, quibusdam, cupiditate sed tempore obcaecati quasi molestias aliquid harum, assumenda placeat minus unde ipsa quam veniam iste commodi dolorum blanditiis itaque nemo esse culpa ad? Amet voluptatibus error quaerat nisi blanditiis veniam molestiae quibusdam? Voluptates, sequi nobis doloribus iste, natus vero maiores ratione et adipisci id, unde amet nam inventore quasi ea qui? Eum, illum excepturi. Repellat eos placeat eaque pariatur illum ad nulla deleniti illo minima? Doloremque maxime ex et voluptate odio mollitia ducimus placeat sed quam eaque tenetur commodi quo nostrum non esse tempore distinctio, delectus velit dicta inventore, eum hic dignissimos. Vero minus expedita veritatis provident tempore in officia consequuntur rerum ad ipsa odio velit eum similique, eius asperiores dolore non! Similique itaque, quas laborum odit eius voluptas eveniet facere tenetur nam sunt nulla, iure quo dolores? Enim quaerat qui quam nulla saepe dolore dignissimos nihil provident deleniti omnis ratione cum blanditiis possimus aperiam quod officia, adipisci animi in aspernatur inventore vitae illo dolorem quidem impedit. Architecto laborum sint debitis, explicabo quia iusto rem eum similique sunt ipsam tempora, corrupti voluptatibus consequuntur sequi, consectetur obcaecati quaerat ut nesciunt dolor! Eligendi molestias distinctio incidunt? Unde, obcaecati est amet eius alias repellat at eligendi ipsam, dolorum quisquam non officiis. Nulla sed odio officiis consequatur earum corrupti aliquam cum explicabo sapiente debitis. Eveniet, sed non odit impedit qui culpa cupiditate consequatur nesciunt optio adipisci magni id molestias repellendus molestiae tenetur provident modi nihil deserunt recusandae aperiam veniam dolorem. Recusandae autem repellat enim perspiciatis est. Doloribus repellat laboriosam fuga nobis, excepturi dolorem.</p>
+    <p id="ans"></p>
+
+    <script>
+        let txt = document.getElementById("para").innerText;
+        let output = "" ;
+        let words = txt.split(" ");
+        let replacementword = "" ;
+        for(i=0;i<words.length;i++){
+            let word = words[i];
+            if(word.length > 8){
+                replacementword = "<span class='bgyellow'>" + word + "</span>";
+            }
+            else{
+                replacementword = word;
+            }
+            output = output  +" " + replacementword + " ";
+            
+        }
+        document.getElementById("para").innerHTML = output;
+        document.getElementById("ans").innerHTML = words[0];
+    </script>
+</body>
+</html>

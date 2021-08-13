@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size of window</title>
+</head>
+<body onload="getsize()" onresize="getsize()">
+    <h3>To find the size of the window when resizing</h3>
+    <p>Width : <span id="wid"></span></p>
+    <p>Height : <span id="hgt"></span></p>
+
+
+    <script>
+        function getsize(){
+        var w =document.documentElement.clientWidth;
+        var h = document.documentElement.clientHeight;
+        document.getElementById("wid").innerHTML = w;
+        document.getElementById("hgt").innerHTML = h;
+    }
+    </script>
+</body>
+</html>

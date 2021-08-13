@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove items</title>
+</head>
+<body>
+    <h3>Remove first and last items from the dropdownlist </h3>
+    <form action="">
+        <label for="drop">Indian Cricketers</label>
+        <select id="drop" size="8">
+            <option>MS Dhoni</option>
+            <option>Virat Kohli</option>
+            <option>Rohit Sharma</option>
+            <option>Rahul Dravid</option>
+            <option>VVS laxman</option>
+            <option>Sachin Tendulkar</option>
+            <option>Zaheer Khan</option>
+            <option>Yuvraj singh</option>
+           
+        </select><br>
+        <button type="button" onclick="remove()">Click to remove</button>
+    </form>
+
+    <script>
+        function remove(){
+            let x = document.getElementById("drop");
+            x.remove(x.length - 1);
+            x.remove(0);
+        }
+    </script>
+
+</body>
+</html>

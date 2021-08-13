@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume of sphere</title>
+</head>
+<body>
+    <h3>To find the volume of the sphere</h3>
+    <form action="">
+        <label for="rad">Enter a radius : </label><br>
+        <input type="text" id="rad"><br><br>
+        <label for="vol">Volume : </label><br>
+        <input type="text" id="vol"><br><br>
+        <button type="button" onclick="calculate()">Calculate</button>
+        <input type="reset">
+        <p id="ans"></p>
+
+
+        <script>
+            function calculate(){
+                let radius = document.getElementById("rad").value;
+                if(isNaN(radius)==true){
+                    document.getElementById("ans").innerHTML = "Invalid entry";
+                }
+                else{
+                    let vol = eval((4/3) * Math.PI * Math.pow(radius,3));
+                    document.getElementById("vol").value = vol;
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>
